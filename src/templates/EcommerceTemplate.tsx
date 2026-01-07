@@ -57,20 +57,20 @@ export const EcommerceTemplate = ({
               {!loadingCollections && hasCollections && (
                 <ScrollLink 
                   to="/#collections" 
-                  className="text-foreground/70 hover:text-foreground transition-colors"
+                  className="text-foreground/70 hover:text-foreground transition-colors font-medium"
                 >
-                  Collections
+                  Colecciones
                 </ScrollLink>
               )}
               <ScrollLink 
                 to="/#products" 
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-foreground/70 hover:text-foreground transition-colors font-medium"
               >
-                Products
+                Fragancias
               </ScrollLink>
               <Link 
                 to="/blog" 
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-foreground/70 hover:text-foreground transition-colors font-medium"
               >
                 Blog
               </Link>
@@ -119,21 +119,27 @@ export const EcommerceTemplate = ({
           {/* Brand */}
           <div>
             <BrandLogoLeft />
-            <p className="mt-4 text-white/70">
-              Your trusted online store
+            <p className="mt-4 text-white/70 max-w-xs">
+              Fragancias de lujo inspiradas en los perfumes más icónicas del mundo. Calidad premium, precios accesibles.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Links</h3>
+            <h3 className="font-semibold mb-4 text-white">Enlaces</h3>
             <div className="space-y-2">
-              <Link 
-                to="/" 
+              <ScrollLink 
+                to="/#collections" 
                 className="block text-white/70 hover:text-white transition-colors"
               >
-                Home
-              </Link>
+                Colecciones
+              </ScrollLink>
+              <ScrollLink 
+                to="/#products" 
+                className="block text-white/70 hover:text-white transition-colors"
+              >
+                Productos
+              </ScrollLink>
               <Link 
                 to="/blog" 
                 className="block text-white/70 hover:text-white transition-colors"
@@ -145,13 +151,17 @@ export const EcommerceTemplate = ({
 
           {/* Social Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Follow Us</h3>
+            <h3 className="font-semibold mb-4 text-white">Síguenos</h3>
             <SocialLinks />
+            <p className="text-white/50 text-sm mt-4">
+              Envío gratis en pedidos superiores a $50
+            </p>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/70">
-          <p>&copy; 2025 Your Store. All rights reserved.</p>
+          <p>&copy; 2025 Fragrance Collection. Todos los derechos reservados.</p>
+          <p className="text-sm mt-2 text-white/50">Fragancias inspiradas en perfumes de lujo. No afiliado a marcas originales.</p>
         </div>
       </div>
     </div>

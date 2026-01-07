@@ -16,8 +16,9 @@ export const NewsletterSection = () => {
   return (
     <HeadlessNewsletter>
       {(logic) => (
-        <section className="bg-muted/30 py-16 border-y">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="bg-gradient-to-br from-accent/10 via-muted/30 to-secondary/10 py-16 border-y relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+          <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {logic.success ? (
               <div className="space-y-4">
                 <div className="flex justify-center">
@@ -26,20 +27,20 @@ export const NewsletterSection = () => {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">
-                  Thanks for subscribing!
+                  ¡Gracias por suscribirte!
                 </h3>
                 <p className="text-muted-foreground">
-                  You'll receive our best offers and promotions soon.
+                  Recibirás nuestras mejores ofertas y lanzamientos exclusivos.
                 </p>
               </div>
             ) : (
               <div className="space-y-6">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-foreground">
-                    Want promotional emails?
+                  <h3 className="text-3xl font-bold text-foreground">
+                    ¿Quieres ofertas exclusivas?
                   </h3>
                   <p className="text-lg text-muted-foreground">
-                    Subscribe to our newsletter and get exclusive offers
+                    Suscríbete y recibe un <span className="text-secondary font-semibold">10% de descuento</span> en tu primera compra
                   </p>
                 </div>
                 
@@ -52,19 +53,19 @@ export const NewsletterSection = () => {
                 >
                   <Input 
                     type="email"
-                    placeholder="your@email.com"
+                    placeholder="tu@email.com"
                     value={logic.email}
                     onChange={(e) => logic.setEmail(e.target.value)}
                     disabled={logic.isSubmitting}
-                    className="flex-1"
+                    className="flex-1 h-12"
                     required
                   />
                   <Button 
                     type="submit"
                     disabled={logic.isSubmitting}
-                    className="sm:w-auto"
+                    className="sm:w-auto h-12 px-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold"
                   >
-                    {logic.isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                    {logic.isSubmitting ? 'Suscribiendo...' : 'Suscribirse'}
                   </Button>
                 </form>
                 
