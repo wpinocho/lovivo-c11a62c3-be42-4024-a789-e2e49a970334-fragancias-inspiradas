@@ -136,6 +136,105 @@ const About = () => {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Nuestro Equipo
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Un grupo apasionado de expertos en perfumería, diseño y calidad trabajando 
+              juntos para crear fragancias excepcionales
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+              <img 
+                src="/team-field-1.jpg" 
+                alt="Equipo trabajando en campo" 
+                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 className="text-white font-bold text-xl mb-2">Día de Campo 2024</h3>
+                <p className="text-white/80 text-sm">
+                  Probando nuevas fragancias en un entorno natural inspirador
+                </p>
+              </div>
+            </div>
+
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+              <img 
+                src="/team-field-2.jpg" 
+                alt="Sesión de testing de fragancias" 
+                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 className="text-white font-bold text-xl mb-2">Sesión de Testing</h3>
+                <p className="text-white/80 text-sm">
+                  Evaluando cada nota olfativa con precisión y pasión
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+              <img 
+                src="/team-field-3.jpg" 
+                alt="Brainstorming al aire libre" 
+                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 className="text-white font-bold text-xl mb-2">Creatividad en Acción</h3>
+                <p className="text-white/80 text-sm">
+                  Brainstorming de nuevas composiciones aromáticas
+                </p>
+              </div>
+            </div>
+
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+              <img 
+                src="/team-field-4.jpg" 
+                alt="Team building en jardín botánico" 
+                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 className="text-white font-bold text-xl mb-2">Jardín Botánico</h3>
+                <p className="text-white/80 text-sm">
+                  Explorando aromas naturales para nuestras creaciones
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16 text-center">
+            <div className="bg-card border border-border rounded-2xl p-8 md:p-12 max-w-3xl mx-auto">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Nuestro equipo está compuesto por perfumistas profesionales, químicos especializados 
+                en fragancias, diseñadores de producto y expertos en control de calidad. Trabajamos 
+                en un ambiente colaborativo donde la creatividad y la excelencia técnica se encuentran.
+              </p>
+              <div className="grid grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                  <div className="text-sm text-muted-foreground">Profesionales</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary mb-2">8</div>
+                  <div className="text-sm text-muted-foreground">Años Experiencia</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-accent mb-2">100+</div>
+                  <div className="text-sm text-muted-foreground">Fragancias Creadas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="py-20 bg-gradient-to-b from-muted/20 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
