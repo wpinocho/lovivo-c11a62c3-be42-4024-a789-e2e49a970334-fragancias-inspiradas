@@ -69,6 +69,12 @@ export const EcommerceTemplate = ({
                 Fragancias
               </ScrollLink>
               <Link 
+                to="/about" 
+                className="text-foreground/70 hover:text-foreground transition-colors font-medium"
+              >
+                Sobre Nosotros
+              </Link>
+              <Link 
                 to="/blog" 
                 className="text-foreground/70 hover:text-foreground transition-colors font-medium"
               >
@@ -140,6 +146,12 @@ export const EcommerceTemplate = ({
               >
                 Productos
               </ScrollLink>
+              <Link 
+                to="/about" 
+                className="block text-white/70 hover:text-white transition-colors"
+              >
+                Sobre Nosotros
+              </Link>
               <Link 
                 to="/blog" 
                 className="block text-white/70 hover:text-white transition-colors"
